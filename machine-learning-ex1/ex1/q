@@ -1,0 +1,86 @@
+'debug' is a function from the file /usr/share/octave/3.8.1/m/miscellaneous/debug.m
+
+ -- Function File: debug ()
+     Summary of debugging commands.  For more information on each
+     command and available options use 'help CMD'.
+
+     The debugging commands available in Octave are
+
+     'dbstop'
+          Add a breakpoint.
+
+     'dbclear'
+          Remove a breakpoint.
+
+     'dbstatus'
+          List all breakpoints.
+
+     'dbwhere'
+          Report the current file and line number where execution is
+          stopped.
+
+     'dbtype'
+          Display the code of the function being debugged, enumerating
+          the line numbers.
+
+     'dblist'
+          List 10 lines of code centered around the line number where
+          execution is stopped.
+
+     'dbstep'
+     'dbnext'
+          Execute (step) one or more lines, follow execution into (step
+          into) a function call, or execute until the end of a function
+          (step out), and re-enter debug mode.
+
+     'dbcont'
+          Continue normal code execution from the debug prompt.
+
+     'dbquit'
+          Quit debugging mode immediately and return to the main prompt.
+
+     'dbstack'
+          Print a backtrace of the execution stack.
+
+     'dbup'
+          Move up the execution stack.
+
+     'dbdown'
+          Move down the execution stack.
+
+     'keyboard'
+          Force entry into debug mode from an m-file.
+
+     'debug_on_error'
+          Configure whether Octave enters debug mode when it encounters
+          an error.
+
+     'debug_on_warning'
+          Configure whether Octave enters debug mode when it encounters
+          a warning.
+
+     'debug_on_interrupt'
+          Configure whether Octave enters debug mode when it encounters
+          an interrupt.
+
+     'isdebugmode'
+          Return true if in debug mode.
+
+     When Octave encounters a breakpoint, or other reason to enter debug
+     mode, the prompt changes to "debug>".  The workspace of the
+     function where the breakpoint was encountered becomes available and
+     any Octave command that is valid in that workspace context may be
+     executed.
+
+     See also: dbstop, dbclear, dbstatus, dbwhere, dbtype, dbcont,
+     dbquit, dbstack, dbup, dbdown, keyboard, debug_on_error,
+     debug_on_warning, debug_on_interrupt, isdebugmode.
+
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
